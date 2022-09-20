@@ -1,4 +1,4 @@
-export class Video {
+export default class Video {
     constructor(title, width, height, url) {
         this.title = title;
         this.width = width;
