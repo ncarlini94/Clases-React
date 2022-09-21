@@ -4,6 +4,7 @@ export default class Button {
         this.css_class = css_class;
     }
 
-    render(
-    )
+    render(){
+
+    }
 };

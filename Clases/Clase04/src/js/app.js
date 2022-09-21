@@ -1,4 +1,5 @@
-import { Button } from "./components/button";
-import { Audio } from "./components/audio";
-import { List } from "./components/list";
-import { Video } from "./components/video";
+import Button from "./components/button.js";
+import Audio from "./components/audio.js";
+import List from "./components/list.js";
+import Video from "./components/video.js";
+

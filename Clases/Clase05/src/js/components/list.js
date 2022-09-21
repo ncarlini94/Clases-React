@@ -1,4 +1,4 @@
-export default class List {
+export default class Form {
     constructor(title, elements) {
         this.name = title;
         this.elements = [];
@@ -6,5 +6,4 @@ export default class List {
 
     render(){
     }
-    
 };
