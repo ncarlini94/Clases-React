@@ -11,7 +11,7 @@ export default class Form {
 
         let myForm = `<form>`
 
-        
+
         for (let i = 0; i < this.element.length; i++) {
             if (i <= 2) {
                 let input = new Input("text","",`Item`)
