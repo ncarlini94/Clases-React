@@ -1,37 +1,36 @@
 import Button from "./button.js";
+import Input from "./input.js";
 
 export default class Form {
-    constructor(title, width, height, type, css_class) {
-        this.title = title;
-        this.width = width;
-        this.height = height;
-        this.type = type;
+    constructor(element, css_class) {
+        this.element = element;
         this.css_class = css_class;
     }
 
     render(){
-        let form = `
-        <div class="ms-2 mb-4">
-        <form class=${this.css_class}>
-        <div class="col">
-        <label for="fname">Width:</label><br>
-        <input type=${this.type} id="wvalue" name="width">
-        </div>
-        <div class="col">
-        <label for="lname">Height:</label><br>
-        <input type=${this.type} id="hvalue" name="height">
-        </div>
-        <div class="col mt-2">
-        <input class="btn btn-primary mt-2" type="submit" onclik="" id="submit" name="submit">
-        </div>
-        </form>
-        </div>
-</form>
-        `
-        return form;
-    }
 
-    submit(){
-        let submit = document.getElementById(submit)
+        let myForm = `<form>`
+
+        
+        for (let i = 0; i < this.element.length; i++) {
+            if (i <= 2) {
+                let input = new Input("text","",`Item`)
+
+                myForm += input.render()
+
+                console.log(myForm)
+            }
+
+        }
+
+        let myButton = new Button("Enviar","btn btn-dark ms-5 mb-2","boton");
+
+        myForm += myButton.render();
+
+        myForm += `</form>`
+
+
+
+        return myForm;
     }
 };
