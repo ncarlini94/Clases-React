@@ -18,7 +18,6 @@ export default class Form {
 
                 myForm += input.render()
 
-                console.log(myForm)
             }
 
         }

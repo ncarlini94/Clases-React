@@ -4,10 +4,10 @@ import Form from "./components/form.js";
 import Video from "./components/video.js";
 import List from "./components/list.js";
 
-let viewVideo = document.getElementById("viewVideo");
-let list = document.getElementById("list");
-let button = document.getElementById("button")
-let form = document.getElementById("form")
+let viewVideo = document.getElementById("myApp");
+let list = document.getElementById("myApp");
+let button = document.getElementById("myApp")
+let form = document.getElementById("myApp")
 
 let myForm = new Form("form","");
 let myList = new List();
