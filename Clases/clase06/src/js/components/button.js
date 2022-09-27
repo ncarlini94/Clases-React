@@ -1,12 +1,9 @@
-export default class Button {
-    constructor(text, css_class, id) {
-        this.texto = text;
-        this.css_class = css_class;
-        this.id = id;
-    }
+import React, {Component} from "react";
+
+export default class Button extends Component {
 
     render(){
-    let button = `<button class="${this.css_class}" type="button" id=${this.id}>${this.texto}</button>`
+    let button = <button class="btn btn-primary mt-2 mb-3" type="button">Boton</button>
 
     return button;
     }
