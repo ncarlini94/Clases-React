@@ -4,12 +4,6 @@ import Video from "../src/js/components/video.js";
 
 function App() {
 
-//let myForm = new Form("form","");
-//let myList = new List();
-//let myVideo = new Video("Whiskey Blues Music | Best Of Slow Blues/Rock Songs | Relaxing Electric Guitar blues","450px", "400px", "https://www.youtube.com/embed/UP2XoGfhJ1Y", "ms-5")
-
-
-
   return (
     <div className="App">
       <header className="App-header">
