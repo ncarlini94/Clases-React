@@ -1,0 +1,13 @@
+.Button{
+    width: 100px;
+    background-color: #0ac0aeef;
+    border: none;
+    padding: 5px;
+}
+
+.Button:hover{
+    width: 105px;
+    height: 25px;
+    background-color: #17d4c1cb;
+    border: none;
+}
