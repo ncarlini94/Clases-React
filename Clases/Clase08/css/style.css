@@ -1,0 +1,14 @@
+*{
+background-color: #858585;
+}
+
+
+.Button{
+    display: flex;
+    margin: 50px;
+}
+
+.Video{
+    width: 40em;
+    height: 30em;
+}
