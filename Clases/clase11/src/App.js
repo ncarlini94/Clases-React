@@ -8,22 +8,32 @@ import Img5 from "./assets/img/img5.jpg";
 function App() {
 
   const Img = [
-    {imagen : Img1},
-    {imagen : Img2},
-    {imagen : Img3},
-    {imagen : Img4},
-    {imagen : Img5}
+    {id : 1,
+    imagen : Img1},
+    {id : 2,
+      imagen : Img2},
+    {id : 3,
+      imagen : Img3},
+    {id : 4,
+      imagen : Img4},
+    {id : 5,
+      imagen : Img5}
   ]
+
+  const Filter = Img.filter( value => value.id > 2)
+
+  console.log(Filter)
+
   return (
     <div className="App bg-secondary">
     <div className="container-flex">
 
     <div>
-    <h2 className="fw-bold">Map</h2>
+    <h2 className="fw-bold pt-3">Map</h2>
       {
         Img.map((e)=>{
           return(
-          <img src={e.imagen} className="p-3" width="500px" alt="img"></img>
+          <img key={e.id} src={e.imagen} className="p-3" width="500px" alt="img"></img>
         )
         })
       }
@@ -32,10 +42,9 @@ function App() {
       <div>
     <h2 className="fw-bold">Filter</h2>
       {
-        Img.filter(e=> e.length > 6).map((e)=>{
-          console.log(e)
+        Img.filter(value => value.id > 2).map((e)=>{
           return(
-          <img src={e.imagen} className="p-3" width="500px" alt="img"></img>
+          <img key={e.id} src={e.imagen} className="p-3" width="500px" alt="img"></img>
         )
         })
       }
