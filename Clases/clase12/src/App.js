@@ -38,11 +38,11 @@ function App() {
         )
         })
       }
+    <h2 className="fw-bold">Filter</h2>
       </div>
             <button className='btn btn-primary m-2' onClick={()=> setCount(count +1)}>+</button>
             <button className='btn btn-primary m-2' onClick={()=> setCount(count -1)}>-</button>
       <div>
-    <h2 className="fw-bold">Filter</h2>
       {
         Img.filter(value => value.id <= count).map((e)=>{
           return(
