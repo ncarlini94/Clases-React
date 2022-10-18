@@ -39,14 +39,14 @@ function App() {
         })
       }
       </div>
-      <button onClick={()=> setCount(count +1)}>+</button>
-            <button onClick={()=> setCount(count -1)}>-</button>
+            <button className='btn btn-primary m-2' onClick={()=> setCount(count +1)}>+</button>
+            <button className='btn btn-primary m-2' onClick={()=> setCount(count -1)}>-</button>
       <div>
     <h2 className="fw-bold">Filter</h2>
       {
         Img.filter(value => value.id <= count).map((e)=>{
           return(
-          <img key={e.id} src={e.imagen} className="p-3" width="500px" alt="img"></img>
+          <img key={e.id} src={e.imagen} className="p-3" width="250px" alt="img"></img>
         )
         })
       }
