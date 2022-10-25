@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/nabvar';
+import ThemeProvider from './context/ThemeProvider';
 
 function App() {
   return (
+    <ThemeProvider>
     <div className="App">
       <header className="App-header">
+      <Navbar/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,6 +23,7 @@ function App() {
         </a>
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 
