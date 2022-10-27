@@ -1,8 +1,7 @@
 import React from 'react';
 
 const defaultState = {
-    darkMode : false,
-    color: 10000
+    darkMode : false
 };
 
 const MainContext = React.createContext(defaultState);

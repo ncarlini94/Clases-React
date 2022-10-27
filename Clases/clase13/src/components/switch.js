@@ -10,7 +10,7 @@ export default function Switch(props){
         switchDarkMode(e, darkMode);
     }
 
-    console.log(handleChange)
+    console.log(darkMode)
 
     return(
         <>
